@@ -25,7 +25,7 @@ end
 
 def valid_phone_number?(phone)
  #["2438894546", "(718)891-1313", "234 435 9978", "(800)4261134"]
-  if phone.match(/\A((\d{3})|(\(\d{3}\)))+\s*+\d{3}+\-*+\d{4}/)
+  if phone.match(/\A((\d{3})|(\(\d{3}\)))+\s*+\d{3}+((\-*)|(\s*))+\d{4}/)
     true
   else
     false
